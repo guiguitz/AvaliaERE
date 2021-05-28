@@ -18,6 +18,9 @@ This APP was developed as a work in the discipline of Software Engineering at UF
 
 ## Contact the Authors
 Guilherme Amorim: `guiguitz@ufmg.br`
+
 Carolina Mayumi: `carolmayumimg@ufmg.br`
+
 Douglas Coutinho `douglasvc@ufmg.br`
+
 Hene Saud: `henesaud@ufmg.br`
