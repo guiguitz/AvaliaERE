@@ -17,10 +17,17 @@ This APP was developed as a work in the discipline of Software Engineering at UF
 - Trello
 
 ## Contact the Authors
-Guilherme Amorim: `guiguitz@ufmg.br`
 
 Carolina Mayumi: `carolmayumimg@ufmg.br`
 
 Douglas Coutinho `douglasvc@ufmg.br`
 
+Emiliano Alves `emilianotca@ufmg.br`
+
+Guilherme Amorim: `guiguitz@ufmg.br`
+
 Hene Saud: `henesaud@ufmg.br`
+
+Luis Henrique Vieira `luishlav@ufmg.br`
+
+
