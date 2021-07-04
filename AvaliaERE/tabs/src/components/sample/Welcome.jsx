@@ -25,9 +25,9 @@ export function Welcome(props) {
 
   const steps = ["local", "azure", "publish"];
   const friendlyStepsName = {
-    local: "1. Build your app locally",
-    azure: "2. Provision and Deploy to the Cloud",
-    publish: "3. Publish to Teams",
+    local: "1. Programar uma prova",
+    azure: "2. Programar notificações",
+    publish: "3. Visualizar calendário de provas",
   };
   const [selectedMenuItem, setSelectedMenuItem] = useState("local");
   const items = steps.map((step) => {
@@ -48,8 +48,7 @@ export function Welcome(props) {
     <div className="welcome page">
       <div className="narrow page-padding">
         <Image src="hello.png" />
-        <h1 className="center">Congratulations{userName ? ", " + userName : ""}!</h1>
-        <p className="center">Your app is running in your {friendlyEnvironmentName}</p>
+        <h1 className="center">Gerenciamento de provas</h1>
         <Menu defaultActiveIndex={0} items={items} underlined secondary />
         <div className="sections">
           {selectedMenuItem === "local" && (
