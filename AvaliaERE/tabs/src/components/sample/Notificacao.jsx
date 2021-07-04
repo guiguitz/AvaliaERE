@@ -9,7 +9,7 @@ export function Notificacao(props) {
   };
   return (
     <div className="deploy page">
-      <h2>fffff</h2>
+      <h2>Selecione os conjuntos de provas e alunos</h2>
       <p>
         Before publishing your app to Teams App Catalog, you may want to provision and deploy your
         app's resources to the cloud to make sure your app will be running smoothly!

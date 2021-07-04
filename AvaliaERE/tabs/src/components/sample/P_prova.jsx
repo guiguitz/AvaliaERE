@@ -21,12 +21,12 @@ export function P_prova() {
 
   return (
     <div>
-      <h2>fucking test worked</h2>
+      {/* <h2>fucking test worked</h2>
       <p>Click below to authorize this app to read your profile photo using Microsoft Graph.</p>
       <Button primary content="Authorize" disabled={loading} onClick={reload} />
       {loading && ProfileCard(true)}
       {!loading && error && <div className="error">{error.toString()}</div>}
-      {!loading && data && ProfileCard(false, data)}
+      {!loading && data && ProfileCard(false, data)} */}
     </div>
   );
 }

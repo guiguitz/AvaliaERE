@@ -53,7 +53,7 @@ export function Welcome(props) {
         <div className="sections">
           {selectedMenuItem === "p_prova" && (
             <div>
-              <EditCode showFunction={showFunction} />
+              {/* <EditCode showFunction={showFunction} /> */}
               {isInTeams && <CurrentUser userName={userName} />}
               <P_prova />
               {showFunction && <AzureFunctions />}
