@@ -1,8 +1,8 @@
 import React from "react";
-import "./Deploy.css";
+import "./Notificacao.css";
 import { Image } from "@fluentui/react-northstar";
 
-export function Deploy(props) {
+export function Notificacao(props) {
   const { docsUrl } = {
     docsUrl: "https://aka.ms/teamsfx-docs",
     ...props,
