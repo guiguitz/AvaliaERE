@@ -3,13 +3,13 @@ import { Image, Menu } from "@fluentui/react-northstar";
 import "./Welcome.css";
 import { EditCode } from "./EditCode";
 import { AzureFunctions } from "./AzureFunctions";
-import { Graph } from "./Graph";
+import { P_prova } from "./P_prova";
 import { CurrentUser } from "./CurrentUser";
 import { useTeamsFx } from "./lib/useTeamsFx";
 import { TeamsUserCredential } from "@microsoft/teamsfx";
 import { useData } from "./lib/useData";
-import { Deploy } from "./Deploy";
-import { Publish } from "./Publish";
+import { Notificacao } from "./Notificacao";
+import { Calendario } from "./Calendario";
 
 export function Welcome(props) {
   const { showFunction, environment } = {
@@ -19,15 +19,15 @@ export function Welcome(props) {
   };
   const friendlyEnvironmentName =
     {
-      local: "local environment",
-      azure: "Azure environment",
+      p_prova: "Ambiente local",
+      notificao: "Azure environment",
     }[environment] || "local environment";
 
-  const steps = ["local", "azure", "publish"];
+  const steps = ["p_prova", "notificao", "calendario"];
   const friendlyStepsName = {
-    local: "1. Build your app locally",
-    azure: "2. Provision and Deploy to the Cloud",
-    publish: "3. Publish to Teams",
+    p_prova: "1. Programar uma prova",
+    notificao: "2. Programar notificações",
+    calendario: "3. Visualizar calendário de provas",
   };
   const [selectedMenuItem, setSelectedMenuItem] = useState("local");
   const items = steps.map((step) => {
@@ -48,26 +48,25 @@ export function Welcome(props) {
     <div className="welcome page">
       <div className="narrow page-padding">
         <Image src="hello.png" />
-        <h1 className="center">Congratulations{userName ? ", " + userName : ""}!</h1>
-        <p className="center">Your app is running in your {friendlyEnvironmentName}</p>
+        <h1 className="center">Gerenciamento de provas</h1>
         <Menu defaultActiveIndex={0} items={items} underlined secondary />
         <div className="sections">
-          {selectedMenuItem === "local" && (
+          {selectedMenuItem === "p_prova" && (
             <div>
-              <EditCode showFunction={showFunction} />
+              {/* <EditCode showFunction={showFunction} /> */}
               {isInTeams && <CurrentUser userName={userName} />}
-              <Graph />
+              <P_prova />
               {showFunction && <AzureFunctions />}
             </div>
           )}
-          {selectedMenuItem === "azure" && (
+          {selectedMenuItem === "notificao" && (
             <div>
-              <Deploy />
+              <Notificacao />
             </div>
           )}
-          {selectedMenuItem === "publish" && (
+          {selectedMenuItem === "calendario" && (
             <div>
-              <Publish />
+              <Calendario />
             </div>
           )}
         </div>

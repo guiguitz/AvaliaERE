@@ -49,5 +49,6 @@ CREATE TABLE alternative (
 CREATE TABLE exam_result (
 	points INT NOT NULL,
 	exam_id INT REFERENCES exam(id) NOT NULL,
-	PRIMARY KEY (exam_id)
+	student_enrollment INT REFERENCES student(enrollment_number) NOT NULL,
+	PRIMARY KEY (exam_id, student_enrollment)
 );
