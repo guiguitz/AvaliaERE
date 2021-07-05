@@ -1,4 +1,4 @@
-## MST-APP-UFMG
+## AvaliaERE
 This is an Microsoft Teams App with college purpose.
 
 ## Introduction
