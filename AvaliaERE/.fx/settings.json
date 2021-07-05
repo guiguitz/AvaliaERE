@@ -1,5 +1,5 @@
 {
-    "appName": "Avaliaeretest",
+    "appName": "AvaliaERE",
     "solutionSettings": {
         "name": "fx-solution-azure",
         "version": "1.0.0",
@@ -16,5 +16,5 @@
         ]
     },
     "currentEnv": "default",
-    "projectId": "be090ade-e9e3-48de-af8c-6bad7986cb64"
+    "projectId": "27222951-273a-4a3d-85bc-7c86fdc27027"
 }

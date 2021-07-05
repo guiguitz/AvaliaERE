@@ -8,7 +8,7 @@
             "url": "https://teams.microsoft.com/l/app/${teamsAppId}?installAppPackage=true&webjoin=true&${account-hint}",
             "presentation": {
                 "group": "remote",
-                "order": 2
+                "order": 1
             }
         },
         {
@@ -18,7 +18,7 @@
             "url": "https://teams.microsoft.com/l/app/${teamsAppId}?installAppPackage=true&webjoin=true&${account-hint}",
             "presentation": {
                 "group": "remote",
-                "order": 1
+                "order": 2
             }
         },
         {
@@ -36,7 +36,6 @@
             "name": "Start and Attach to Frontend (Chrome)",
             "type": "pwa-chrome",
             "request": "launch",
-            "runtimeExecutable": "custom",
             "url": "https://teams.microsoft.com/l/app/${localTeamsAppId}?installAppPackage=true&webjoin=true&${account-hint}",
             "preLaunchTask": "Start Frontend",
             "presentation": {
@@ -54,7 +53,7 @@
             "preLaunchTask": "Pre Debug Check",
             "presentation": {
                 "group": "all",
-                "order": 2
+                "order": 1
             },
             "stopAll": true
         },
@@ -66,7 +65,7 @@
             "preLaunchTask": "Pre Debug Check",
             "presentation": {
                 "group": "all",
-                "order": 1
+                "order": 2
             },
             "stopAll": true
         }

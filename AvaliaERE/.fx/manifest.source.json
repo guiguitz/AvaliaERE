@@ -15,12 +15,12 @@
         "outline": "outline.png"
     },
     "name": {
-        "short": "Avaliaeretest",
+        "short": "AvaliaERE",
         "full": "This field is not used"
     },
     "description": {
-        "short": "Short description of Avaliaeretest.",
-        "full": "Full description of Avaliaeretest."
+        "short": "Short description of AvaliaERE.",
+        "full": "Full description of AvaliaERE."
     },
     "accentColor": "#FFFFFF",
     "bots": [],
@@ -38,16 +38,15 @@
     "staticTabs": [
         {
             "entityId": "index",
-            "name": "Exames",
+            "name": "Criar Prova",
             "contentUrl": "{baseUrl}/index.html#/tab",
             "websiteUrl": "{baseUrl}/index.html#/tab",
             "scopes": [
                 "personal"
             ]
-        },
-        {
+        },{
             "entityId": "index2",
-            "name": "Scoreboard",
+            "name": "Gerenciamento de Prova",
             "contentUrl": "{baseUrl}/index.html#/tab2",
             "websiteUrl": "{baseUrl}/index.html#/tab2",
             "scopes": [
@@ -56,7 +55,7 @@
         },
         {
             "entityId": "index3",
-            "name": "Realizar Exame",
+            "name": "Realizar Prova",
             "contentUrl": "{baseUrl}/index.html#/tab3",
             "websiteUrl": "{baseUrl}/index.html#/tab3",
             "scopes": [
@@ -65,7 +64,7 @@
         },
         {
             "entityId": "index4",
-            "name": "Gerenciamento de Prova",
+            "name": "Scoreboard",
             "contentUrl": "{baseUrl}/index.html#/tab4",
             "websiteUrl": "{baseUrl}/index.html#/tab4",
             "scopes": [
