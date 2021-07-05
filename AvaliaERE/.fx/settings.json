@@ -1,5 +1,5 @@
 {
-    "appName": "AvaliaERE",
+    "appName": "Avaliaeretest",
     "solutionSettings": {
         "name": "fx-solution-azure",
         "version": "1.0.0",
@@ -14,5 +14,7 @@
             "fx-resource-aad-app-for-teams",
             "fx-resource-simple-auth"
         ]
-    }
+    },
+    "currentEnv": "default",
+    "projectId": "be090ade-e9e3-48de-af8c-6bad7986cb64"
 }
