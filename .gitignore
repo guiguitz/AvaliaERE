@@ -1,0 +1,21 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+AvaliaERE/node_modules
+
+# testing
+AvaliaERE/coverage
+
+# production
+AvaliaERE/build
+
+# misc
+AvaliaERE/DS_Store
+AvaliaERE/env
+AvaliaERE/deployment
+
+AvaliaERE/.fx/default.userdata
+AvaliaERE/.fx/env.default.json
+AvaliaERE/.fx/local.env
+AvaliaERE/.fx/settings.json
+AvaliaERE/tabs/node_modules

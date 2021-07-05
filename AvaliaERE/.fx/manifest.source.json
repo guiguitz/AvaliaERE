@@ -1,0 +1,84 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.9",
+    "version": "1.0.0",
+    "id": "{appid}",
+    "packageName": "com.microsoft.teams.extension",
+    "developer": {
+        "name": "Teams App, Inc.",
+        "websiteUrl": "{baseUrl}",
+        "privacyUrl": "{baseUrl}/index.html#/privacy",
+        "termsOfUseUrl": "{baseUrl}/index.html#/termsofuse"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "AvaliaERE",
+        "full": "This field is not used"
+    },
+    "description": {
+        "short": "Short description of AvaliaERE.",
+        "full": "Full description of AvaliaERE."
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [],
+    "composeExtensions": [],
+    "configurableTabs": [
+        {
+            "configurationUrl": "{baseUrl}/index.html#/config",
+            "canUpdateConfiguration": true,
+            "scopes": [
+                "team",
+                "groupchat"
+            ]
+        }
+    ],
+    "staticTabs": [
+        {
+            "entityId": "index",
+            "name": "Criar Prova",
+            "contentUrl": "{baseUrl}/index.html#/tab",
+            "websiteUrl": "{baseUrl}/index.html#/tab",
+            "scopes": [
+                "personal"
+            ]
+        },{
+            "entityId": "index2",
+            "name": "Gerenciamento de Prova",
+            "contentUrl": "{baseUrl}/index.html#/tab2",
+            "websiteUrl": "{baseUrl}/index.html#/tab2",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+            "entityId": "index3",
+            "name": "Realizar Prova",
+            "contentUrl": "{baseUrl}/index.html#/tab3",
+            "websiteUrl": "{baseUrl}/index.html#/tab3",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+            "entityId": "index4",
+            "name": "Scoreboard",
+            "contentUrl": "{baseUrl}/index.html#/tab4",
+            "websiteUrl": "{baseUrl}/index.html#/tab4",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [],
+    "webApplicationInfo": {
+        "id": "{appClientId}",
+        "resource": "{webApplicationInfoResource}"
+    }
+}

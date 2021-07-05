@@ -1,0 +1,20 @@
+{
+    "appName": "AvaliaERE",
+    "solutionSettings": {
+        "name": "fx-solution-azure",
+        "version": "1.0.0",
+        "hostType": "Azure",
+        "capabilities": [
+            "Tab"
+        ],
+        "azureResources": [],
+        "activeResourcePlugins": [
+            "fx-resource-local-debug",
+            "fx-resource-frontend-hosting",
+            "fx-resource-aad-app-for-teams",
+            "fx-resource-simple-auth"
+        ]
+    },
+    "currentEnv": "default",
+    "projectId": "27222951-273a-4a3d-85bc-7c86fdc27027"
+}

@@ -15,13 +15,18 @@ This APP was developed as a work in the discipline of Software Engineering at UF
 - Javascript (ReactJS)
 - GitHub
 
+## Architecture
+This project follows the "Three Tier Archicture" pattern as shown in the image below.
+
+![architecture](res/architecture.svg)
+
 ## Product Backlog and tasks
 1. Creating an exam:
-	1. The teacher create a multiple-choice form with a defined grade for each question.
+	1. The teacher creates a multiple-choice form with a defined grade for each question.
 2. Schedule an exam:
-	1. The teacher schedule an exam in Microsof Teams app which is visible in calendar for students.
+	1. The teacher schedules an exam in Microsof Teams app which is visible in calendar for students.
 3. Schedule notifications:
-	1. When the teacher schedule a test, he also can send extra notifications for students in MS Teams and e-mail.
+	1. When the teacher schedules a test, he also can send extra notifications for students in MS Teams and e-mail.
 4. Doing the test:
 	1. The student accesses the test form at the scheduled time and answer the questions.
 5. Generating result:
