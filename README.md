@@ -15,6 +15,11 @@ This APP was developed as a work in the discipline of Software Engineering at UF
 - Javascript (ReactJS)
 - GitHub
 
+## Architecture
+This project follows the "Three Tier Archicture" pattern as shown in the image below.
+
+![architecture](res/architecture.svg)
+
 ## Product Backlog and tasks
 1. Creating an exam:
 	1. The teacher creates a multiple-choice form with a defined grade for each question.
