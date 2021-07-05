@@ -1,11 +1,8 @@
 import React from "react";
 import "./Notificacao.css";
 import { Image } from "@fluentui/react-northstar";
-import { Checkbox,TextField } from '@material-ui/core';
+import { Checkbox,TextField, Button, Backdrop,CircularProgress } from '@material-ui/core';
 
-import { makeStyles} from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Slider from '@material-ui/core/Slider';
 
 
 
@@ -40,7 +37,7 @@ export function Notificacao(props) {
 
   <TextField
     id="datetime-local"
-    label="Próxima Prova/teste"
+    label="Data da prova/teste"
     type="datetime-local"
     defaultValue="2021-05-7T10:30"
 
@@ -57,16 +54,27 @@ export function Notificacao(props) {
 
 </p>
 
-  <TextField id="standard-basic" label="Nome para prova/teste" />
+  <TextField id="standard-basic" label="Nome da prova/teste" />
   <TextField id="filled-basic" label="Disciplina" variant="filled" />
 
 
+  <p>
+
+  </p>
 
 
 
 
 
 
+
+
+  <Button variant="outlined" color="primary" onClick={""}>
+  Programar prova
+</Button>
+<Backdrop   onClick={"handleClose"}>
+  <CircularProgress color="inherit" />
+</Backdrop>
 
 
 

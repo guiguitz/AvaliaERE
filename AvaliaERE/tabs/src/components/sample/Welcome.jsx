@@ -3,7 +3,7 @@ import { Image, Menu } from "@fluentui/react-northstar";
 import "./Welcome.css";
 import { EditCode } from "./EditCode";
 import { AzureFunctions } from "./AzureFunctions";
-import { P_prova } from "./P_prova";
+// import { P_prova } from "./P_prova";
 import { CurrentUser } from "./CurrentUser";
 import { useTeamsFx } from "./lib/useTeamsFx";
 import { TeamsUserCredential } from "@microsoft/teamsfx";
@@ -19,15 +19,15 @@ export function Welcome(props) {
   };
   const friendlyEnvironmentName =
     {
-      p_prova: "Ambiente local",
+      // p_prova: "Ambiente local",
       notificao: "Azure environment",
     }[environment] || "local environment";
 
   const steps = ["p_prova", "notificao", "calendario"];
   const friendlyStepsName = {
-    p_prova: "1. Programar uma prova",
-    notificao: "2. Programar notificações",
-    calendario: "3. Visualizar calendário de provas",
+    // p_prova: "1. Programar uma prova",
+    notificao: "1. Programar notificação de prova",
+    calendario: "2. Visualizar calendário de provas",
   };
   const [selectedMenuItem, setSelectedMenuItem] = useState("local");
   const items = steps.map((step) => {
@@ -55,7 +55,7 @@ export function Welcome(props) {
             <div>
               {/* <EditCode showFunction={showFunction} /> */}
               {isInTeams && <CurrentUser userName={userName} />}
-              <P_prova />
+              {/* { <P_prova /> } */}
               {showFunction && <AzureFunctions />}
             </div>
           )}
