@@ -15,7 +15,7 @@ AvaliaERE/env
 AvaliaERE/deployment
 
 AvaliaERE/.fx/default.userdata
-AvaliaERE/env.default.json
-AvaliaERE/.fx/env.local.env
+AvaliaERE/.fx/env.default.json
+AvaliaERE/.fx/local.env
 AvaliaERE/.fx/settings.json
 AvaliaERE/tabs/node_modules
