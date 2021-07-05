@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Text, Button, Image, Checkbox } from "@fluentui/react-northstar";
 import Countdown from "react-countdown";
+import { Typography, makeStyles, AppBar, Toolbar } from "@material-ui/core";
 import "./Exame.css";
 
 const questão1 = [
@@ -255,6 +256,18 @@ class ExameAlunos extends Component {
     page: 1,
   };
 
+  useStyles = makeStyles((theme) => ({
+    root: {
+      width: "100%",
+    },
+    heading: {
+      fontSize: theme.typography.pxToRem(15),
+      fontWeight: theme.typography.fontWeightRegular,
+    },
+  }));
+
+  classes = this.useStyles;
+
   exameFinalizado = () => {
     this.setState({ page: 0 });
   };
@@ -262,8 +275,8 @@ class ExameAlunos extends Component {
   render() {
     if (this.state.page === 0) {
       return (
-        <div className="welcome page">
-          <div className="narrow page-padding">
+        <div>
+          <div>
             <div>
               <div>
                 <Image src="concluded.png" />
@@ -279,22 +292,32 @@ class ExameAlunos extends Component {
       );
     } else {
       return (
-        <div className="welcome page">
-          <div className="narrow page-padding">
-            <div>
+        <div>
+          <AppBar position="static">
+            <Toolbar>
+              <Typography variant="h6" className={this.classes.title}>
+                AvaliaERE
+              </Typography>
+            </Toolbar>
+          </AppBar>
+
+          <div className="welcome page">
+            <div className="narrow page-padding">
               <div>
-                <Countdown date={Date.now() + 6000000} renderer={renderer} />
                 <div>
-                  <Button
-                    onClick={this.exameFinalizado}
-                    content="Finalizar Exame"
-                    primary
-                  />
+                  <Countdown date={Date.now() + 6000000} renderer={renderer} />
+                  <div>
+                    <Button
+                      onClick={this.exameFinalizado}
+                      content="Finalizar Prova"
+                      primary
+                    />
+                  </div>
                 </div>
+                <Questãos1Alunos />
+                <Questãos2Alunos />
+                <Questãos3Alunos />
               </div>
-              <Questãos1Alunos />
-              <Questãos2Alunos />
-              <Questãos3Alunos />
             </div>
           </div>
         </div>

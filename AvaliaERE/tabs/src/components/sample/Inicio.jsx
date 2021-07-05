@@ -17,7 +17,7 @@ export const Inicio = ({ props }) => {
     },
   }));
 
-  const classes = useStyles();
+  const classes = useStyles;
   const { isInTeams } = useTeamsFx();
   const userProfile = useData(async () => {
     const credential = new TeamsUserCredential();
@@ -37,16 +37,16 @@ export const Inicio = ({ props }) => {
             </Typography>
           </Toolbar>
         </AppBar>
-        <h1 className="titulo"> Criação de Exames</h1>
+        <h1 className="titulo"> Criação de Provas</h1>
         <p className="subtitulo">
-          Bem-vindo{userName ? ", " + userName : ""}, aqui você pode criar
-          exames que serão aplicados a equipes no Teams.
+          Bem-vindo (a){userName ? ", " + userName : ""}, aqui você pode criar
+          provas que serão aplicadas a equipes no Teams.
         </p>
         <Button
           className="button"
           style={{ margin: "0 auto", display: "flex" }}
           onClick={começarExame}
-          content="Criar Novo Exame"
+          content="Criar Nova Prova"
           primary
         />
       </div>

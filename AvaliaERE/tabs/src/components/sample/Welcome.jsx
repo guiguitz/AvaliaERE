@@ -10,6 +10,7 @@ import { TeamsUserCredential } from "@microsoft/teamsfx";
 import { useData } from "./lib/useData";
 import { Notificacao } from "./Notificacao";
 import { Calendario } from "./Calendario";
+import { Typography, makeStyles, AppBar, Toolbar } from "@material-ui/core";
 
 export function Welcome(props) {
   const { showFunction, environment } = {
@@ -24,6 +25,19 @@ export function Welcome(props) {
     }[environment] || "local environment";
 
   const steps = ["p_prova", "notificao", "calendario"];
+
+  const useStyles = makeStyles((theme) => ({
+    root: {
+      width: "100%",
+    },
+    heading: {
+      fontSize: theme.typography.pxToRem(15),
+      fontWeight: theme.typography.fontWeightRegular,
+    },
+  }));
+
+  const classes = useStyles;
+
   const friendlyStepsName = {
     // p_prova: "1. Programar uma prova",
     notificao: "1. Programar notificação de prova",
@@ -45,30 +59,39 @@ export function Welcome(props) {
   })?.data;
   const userName = userProfile ? userProfile.displayName : "";
   return (
-    <div className="welcome page">
-      <div className="narrow page-padding">
-        <Image src="hello.png" />
-        <h1 className="center">Gerenciamento de provas</h1>
-        <Menu defaultActiveIndex={0} items={items} underlined secondary />
-        <div className="sections">
-          {selectedMenuItem === "p_prova" && (
-            <div>
-              {/* <EditCode showFunction={showFunction} /> */}
-              {isInTeams && <CurrentUser userName={userName} />}
-              {/* { <P_prova /> } */}
-              {showFunction && <AzureFunctions />}
-            </div>
-          )}
-          {selectedMenuItem === "notificao" && (
-            <div>
-              <Notificacao />
-            </div>
-          )}
-          {selectedMenuItem === "calendario" && (
-            <div>
-              <Calendario />
-            </div>
-          )}
+    <div>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6" className={classes.title}>
+            AvaliaERE
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <div className="welcome page">
+        <div className="narrow page-padding">
+          <Image src="hello.png" />
+          <h1 className="center">Gerenciamento de provas</h1>
+          <Menu defaultActiveIndex={0} items={items} underlined secondary />
+          <div className="sections">
+            {selectedMenuItem === "p_prova" && (
+              <div>
+                {/* <EditCode showFunction={showFunction} /> */}
+                {isInTeams && <CurrentUser userName={userName} />}
+                {/* { <P_prova /> } */}
+                {showFunction && <AzureFunctions />}
+              </div>
+            )}
+            {selectedMenuItem === "notificao" && (
+              <div>
+                <Notificacao />
+              </div>
+            )}
+            {selectedMenuItem === "calendario" && (
+              <div>
+                <Calendario />
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>

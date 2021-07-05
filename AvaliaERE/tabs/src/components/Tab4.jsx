@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Welcome } from "./sample/Welcome";
+import { Emiliano } from "./sample/Emiliano";
 
 export default function Tab() {
-  return <Welcome />;
+  return <Emiliano />;
 }
