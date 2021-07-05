@@ -8,11 +8,8 @@
     },
     "license": "MIT",
     "dependencies": {
-<<<<<<< HEAD
         "@material-ui/core": "^4.11.4"
-=======
         "@fluentui/react": "^8.22.0",
         "@fluentui/react-northstar": "^0.57.0"
->>>>>>> 89959de21ead734f6d2ac9ccab56b5a0942e0636
     }
 }
