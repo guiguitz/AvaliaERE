@@ -10,7 +10,7 @@ This APP was developed as a work in the discipline of Software Engineering at UF
 - Place where the student can add their grades for follow-up during the semester
 
 ## Technology:
-- Power agents
+- Microsoft Toolkit (VSCode)
 - postgresql
 - Javascript (ReactJS)
 - GitHub
