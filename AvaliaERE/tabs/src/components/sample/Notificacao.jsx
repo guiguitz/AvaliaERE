@@ -1,6 +1,10 @@
 import React from "react";
 import "./Notificacao.css";
 import { Image } from "@fluentui/react-northstar";
+import { Checkbox,TextField, Button, Backdrop,CircularProgress } from '@material-ui/core';
+
+
+
 
 export function Notificacao(props) {
   const { docsUrl } = {
@@ -9,27 +13,76 @@ export function Notificacao(props) {
   };
   return (
     <div className="deploy page">
-      <h2>Selecione os conjuntos de provas e alunos</h2>
-      <p>
-        Before publishing your app to Teams App Catalog, you may want to provision and deploy your
-        app's resources to the cloud to make sure your app will be running smoothly!
-      </p>
-      <p>
-        To provision your resources, you can either use our CLI command "teamsfx provision" or apply
-        “Teams: Provision in the Cloud" in Command palette.
-      </p>
-      <p>
-        To deploy your app, you can either use our CLI command "teamsfx deploy" or apply “Teams:
-        Deploy to the cloud" in Command palette.
-      </p>
-      <Image src="deploy.png" />
-      <p>
-        For more information, see the{" "}
-        <a href={docsUrl} target="_blank" rel="noreferrer">
-          docs
-        </a>
-        .
-      </p>
+      <Checkbox
+         value="checkedA"
+          inputProps={{ 'aria-label': 'Checkbox A' }}
+      />Enviar para turma 1 (T1)
+
+      <Checkbox
+         value="checkedA"
+          inputProps={{ 'aria-label': 'Checkbox A' }}
+      />Enviar para turma 1 (T2)
+
+      <Checkbox
+         value="checkedA"
+          inputProps={{ 'aria-label': 'Checkbox A' }}
+      />Enviar para turma 1 (T3)
+
+<p>
+ 
+
+
+
+</p>
+
+  <TextField
+    id="datetime-local"
+    label="Data da prova/teste"
+    type="datetime-local"
+    defaultValue="2021-05-7T10:30"
+
+    InputLabelProps={{
+      shrink: true,
+    }}
+  />
+
+
+<p>
+ 
+
+
+
+</p>
+
+  <TextField id="standard-basic" label="Nome da prova/teste" />
+  <TextField id="filled-basic" label="Disciplina" variant="filled" />
+
+
+  <p>
+
+  </p>
+
+
+
+
+
+
+
+
+  <Button variant="outlined" color="primary" onClick={""}>
+  Programar prova
+</Button>
+<Backdrop   onClick={"handleClose"}>
+  <CircularProgress color="inherit" />
+</Backdrop>
+
+
+
+
+
+
     </div>
+
+    
   );
 }
