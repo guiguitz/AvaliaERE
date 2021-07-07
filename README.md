@@ -10,14 +10,14 @@ The goal for this app is to concentrate everything related to Exams and Scores i
 - Enabling notifications;
 - Place where the student can add all grades for follow-up during the semester.
 
-## Technology:
+## Technology
 - Microsoft Toolkit (VSCode)
 - PostgreSQL
 - Javascript (ReactJS)
 - GitHub
 - Notion
 
-## Dependencies:
+## Dependencies
 - @material-ui/core (4.11.4)
 - @material-ui/icons (4.11.2)
 - react-countdown (2.3.2)
@@ -48,6 +48,13 @@ This project follows the "Three Tier Architecture" pattern, as shown in the imag
 | 6.1, 6.2 | Grades databes | Luis | Partial |
 | 2.1, 3.1 | Notifications setup | Guilherme e Hene | Partial |
 | 1-6 | Backend-frontend binding layer | Luis | Partial |
+
+## Interface sample
+![criação_de_provas_1](imgs/criação_de_provas_1.png)
+![criação_de_provas_2](imgs/criação_de_provas_2.png)
+![gerenciamento_de_provas](imgs/gerenciamento_de_provas.png)
+![realizar_provas](imgs/realizar_provas.png)
+![scoreboard](imgs/scoreboard.png)
 
 ## Contact the Authors
 Carolina Mayumi: `carolmayumimg@ufmg.br`  
