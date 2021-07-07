@@ -73,6 +73,12 @@ class Questão extends Component {
               label="Correta"
               id="0"
             />
+            <Input
+              className="option1"
+              label="Valor da Questão:"
+              labelPosition="inline"
+              id="inside-label"
+            />
           </div>
           <div>
             <Input
