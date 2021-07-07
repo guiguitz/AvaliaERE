@@ -1,59 +1,55 @@
 ## AvaliaERE
-This is an Microsoft Teams App with college purpose.
+It is a Microsoft Teams App with a college purpose.
 
 ## Introduction
-This APP was developed as a work in the discipline of Software Engineering at UFMG - Prof. Marco Tulio Valente - mtov@dcc.ufmg.br
+This APP is a work for the discipline of Software Engineering at UFMG - Prof. Marco Tulio Valente - mtov@dcc.ufmg.br.
+The goal for this app is to concentrate everything related to Exams and Scores in a single app. It can reduce the number of tools that teachers and students are using in their routines.
 
 ## Features
-- Creation of exams and assignments reminder
-- Enabling notifications
-- Place where the student can add their grades for follow-up during the semester
+- Interface for creating and taking exams, for teachers and students, respectively;
+- Enabling notifications;
+- Place where the student can add all grades for follow-up during the semester.
 
 ## Technology:
 - Microsoft Toolkit (VSCode)
-- postgresql
+- PostgreSQL
 - Javascript (ReactJS)
 - GitHub
+- Notion
+
+## Dependencies:
+- @material-ui/core (4.11.4)
+- @material-ui/icons (4.11.2)
+- react-countdown (2.3.2)
 
 ## Architecture
-This project follows the "Three Tier Archicture" pattern as shown in the image below.
+This project follows the "Three Tier Architecture" pattern, as shown in the image below.
 
 ![architecture](res/architecture.svg)
 
 ## Product Backlog and tasks
-1. Creating an exam:
-	1. The teacher creates a multiple-choice form with a defined grade for each question.
-2. Schedule an exam:
-	1. The teacher schedules an exam in Microsof Teams app which is visible in calendar for students.
-3. Schedule notifications:
-	1. When the teacher schedules a test, he also can send extra notifications for students in MS Teams and e-mail.
-4. Doing the test:
-	1. The student accesses the test form at the scheduled time and answer the questions.
-5. Generating result:
-	1. After the student answers the test, the grade is automatically generated and, after the test time ends, the grade is posted in the system.
-6. Checking grades:
-	1. The student accesses their own grades and the class's average grades.
-	2. The teacher accesses each student's grades and overall class statistics.
-7. Score board:
-	1. The student can add grades from other subjects in the score board.
+| # | Histories | Task 1 | Task 2 |
+| :---: | :---: | :---: | :---: |
+| 1 | Creating an exam | The teacher creates a multiple-choice form with a defined grade for each question | - |
+| 2 | Schedule an exam | The teacher schedules an exam in the Microsoft Teams app visible in the calendar for students | - |
+| 3 | Schedule notifications |  The teacher can send notifications for students in MS Teams and e-mail. | - |
+| 4 | Doing the test | Students can access the test form and answers the questions. | - | Done |
+| 5 | Generating results | Grade is automatically generated | - |
+| 6 | Checking grades | Students can access their grades and the class's average grades | Students can add grades from other subjects to the scoreboard |
 
 ## Sprint Backlog
-- Frontend:
-	- Exam creation interface (1.1) [Douglas]
-	- Scheduling interface (2.1, 3.1) [Hene]
-	- Test taking interface (4.1) [Guilherme]
-	- Score board interface (6.1, 6.2, 7.1) [Emiliano]
-- Backend:
-	- Exams database (1.1, 2.1, 5.1) [Mayumi]
-	- Grades databes (5.1, 6.1, 6.2) [Luis]
-- Notification System:
-	- Teams (2.1, 3.1) [Guilherme]
-	- Email (2.1, 3.1) [Guilherme]
-- Integration:
-	- Backend-frontend binding layer (1-6) [Hene]
+| Histories | Task | Engineer |  Status |
+| :---: | :---: | :---: | :---: |
+| 1 | Exam creation interface | Douglas | Done |
+| 2.1, 3.1 | Scheduling interface | Hene | Partial |
+| 4.1 | Test-taking interface | Guilherme | Done |
+| 6.1, 6.2 | Scoreboard interface | Emiliano | Partial |
+| 1.1, 4.1 | Exams database | Carolina | Done |
+| 6.1, 6.2 | Grades databes | Luis | Partial |
+| 2.1, 3.1 | Notifications setup | Guilherme e Hene | Partial |
+| 1-6 | Backend-frontend binding layer | Luis | Partial |
 
 ## Contact the Authors
-
 Carolina Mayumi: `carolmayumimg@ufmg.br`  
 Douglas Coutinho `douglasvc@ufmg.br`  
 Emiliano Alves `emilianotca@ufmg.br`  
